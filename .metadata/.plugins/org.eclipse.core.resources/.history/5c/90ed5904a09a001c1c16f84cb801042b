@@ -1,0 +1,11 @@
+package iuh.fit.se.libs;
+
+public class HappyFortuneService implements FortuneService{
+
+	
+	public String getDailyWorkout() {
+		// TODO Auto-generated method stub
+		return "Today is a lucky day";
+	}
+
+}

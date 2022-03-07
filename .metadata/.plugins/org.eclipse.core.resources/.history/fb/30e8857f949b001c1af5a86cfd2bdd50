@@ -1,0 +1,30 @@
+package iuh.fit.src;
+
+import java.io.IOException;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+@WebServlet("/MvcDemo")
+public class MvcDemoServelet extends HttpServlet {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	public MvcDemoServelet() {
+		// TODO Auto-generated constructor stub
+	}
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		String[] hs= {"Xuan","Ha","Thu", "Dong"};
+		req.setAttribute("list_hs", hs);
+		
+		resp.getWriter().println("<h1> xxx </h1>");;
+		RequestDispatcher dispatcher= req.getRequestDispatcher("view_Student.jsp");
+		dispatcher.forward(req, resp);
+	}
+}

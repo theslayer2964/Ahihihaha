@@ -1,0 +1,117 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Student Tracker App</title>
+<style type="text/css">
+body {
+	margin: 0 0;
+	padding: 0 0;
+}
+
+#wrapper {
+	background-color: rgb(24, 111, 226);
+	height: 150px;
+	width: 100%;
+}
+
+h2 {
+	color: white;
+	line-height: 150px;
+	font-size: 32px;
+	text-align: center;
+}
+
+.add-student-button {
+	font-size: 24px;
+	width: 250px;
+	height: 50px;
+	font-weight: bold;
+	color: rgb(24, 111, 226);
+	border-radius: 5px 5px 5px 5px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.table {
+	border: 1px solid black;
+	height: 50px;
+	width: 50%;
+}
+
+td {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+td a {
+	border: 1px solid yellow;
+	color: white;
+	background-color: rgb(24, 111, 226);
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 7px;
+	padding-right: 7px;
+	border-radius: 5px;
+	text-decoration: none;
+}
+</style>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<h2>FooBar University</h2>
+		</div>
+	</div>
+	<div class="container">
+		<div class="content">
+			<input type="button" value="Add Student"
+				onclick="window.location.href='add-student-form';return false;"
+				class="add-student-button" />
+
+			<table class="table">
+				<thead
+					style="background-color: rgb(24, 111, 226); color: white; font-size: 18px;">
+					<tr>
+						<th>First Name</th>
+						<th>Last Name</th>
+						<th>Email</th>
+						<th>Action</th>
+					</tr>
+				</thead>
+				<tbody>
+					<c:forEach var="tempStudent" items="${STUDENT_LIST}">
+						<!-- tag: tạo ra 2 url: temp vf delete chứa tên biến và value, 
+                	-> bên trong là 2 tham số đi kèm vs url  -->
+						<c:url var="tempLink" value="StudentControllerServlet">
+							<c:param name="command" value="LOAD"></c:param>
+							<c:param name="studentId" value="${tempStudent.id}"></c:param>
+						</c:url>
+						<!-- set up link to delete -->
+						<c:url var="deleteLink" value="StudentControllerServlet">
+							<c:param name="command" value="DELETE"></c:param>
+							<c:param name="studentId" value="${tempStudent.id}"></c:param>
+						</c:url>
+						<tr>
+							<td>${tempStudent.firstName}</td>
+							<td>${tempStudent.lastName}</td>
+							<td>${tempStudent.email}</td>
+							<td style="text-align: center;">
+								<!-- tạo ra 2 url tham chiếu đến 2 cái link tempLink, deleteLink, tạo sẵn ở trên, gọi đến
+                			 Sau khi click dô cái này -> gọi đến serlet z``, có tham số z`` đc gửi đi -->
+								<a href="${tempLink}">Update</a> <a href="${deleteLink}"
+								onclick="if (!(confirm('Are you sure you want to delete this student')))">Delete</a>
+							</td>
+						</tr>
+					</c:forEach>
+				</tbody>
+
+			</table>
+
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+body {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+#wrapper {
+	background-color: rgb(24, 111, 226);
+	height: 150px;
+	width: 100%;
+}
+#container{
+	margin: 10px 10px 10px 10px;
+}
+h2 {
+	color: white;
+	line-height: 150px;
+	font-size: 32px;
+	text-align: center;
+}
+
+.add-student-button {
+	font-size: 24px;
+	width: 250px;
+	height: 50px;
+	font-weight: bold;
+	color: rgb(24, 111, 226);
+	border-radius: 5px 5px 5px 5px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.table {
+	border: 1px solid black;
+	height: 50px;
+	width: 50%;
+}
+
+td {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+td a {
+	border: 1px solid yellow;
+	color: white;
+	background-color: rgb(73, 131, 207);
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 7px;
+	padding-right: 7px;
+	border-radius: 5px;
+	text-decoration: none;
+}

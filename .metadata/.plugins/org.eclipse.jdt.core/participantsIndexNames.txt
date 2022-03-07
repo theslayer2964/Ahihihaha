@@ -1,0 +1,25 @@
+INDEX VERSION 1.131
+C:\Users\DELL\Desktop\JavaWWW2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3628836338.index
+\ServletProject\src\main\java
+C:\Users\DELL\Desktop\JavaWWW2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2625931835.index
+\02_Servlet2\src\main\java
+C:\Users\DELL\Desktop\JavaWWW2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\883491808.index
+\HelloWorld\src\main\java
+C:\Users\DELL\Desktop\JavaWWW2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\349658855.index
+\web_student_tracker\src\main\java
+C:\Users\DELL\Desktop\JavaWWW2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1856974888.index
+\HelloWorld\src\main\java
+C:\Users\DELL\Desktop\JavaWWW2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\217725089.index
+\ServletProject\src\main\java
+C:\Users\DELL\Desktop\JavaWWW2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2100510464.index
+\buoi3\src\main\java
+C:\Users\DELL\Desktop\JavaWWW2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2892418690.index
+\02_Servlet\src\main\java
+C:\Users\DELL\Desktop\JavaWWW2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\199922162.index
+\web_student_tracker\src\main\java
+C:\Users\DELL\Desktop\JavaWWW2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\115563731.index
+\01_Hello\src\main\java
+C:\Users\DELL\Desktop\JavaWWW2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1130066586.index
+\02_Servlet2\src\main\java
+C:\Users\DELL\Desktop\JavaWWW2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1688465784.index
+\HelloWorld\src\main\java

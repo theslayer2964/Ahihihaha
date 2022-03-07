@@ -1,0 +1,15 @@
+package iuh.fit.se.libs;
+
+public class TennisCoach implements Coach{
+
+	public String getDailyWorkout() {
+		// TODO Auto-generated method stub
+		return ">> tennisCoach : inside default constructor ";
+	}
+
+	public String getDailyFortune() {
+		// TODO Auto-generated method stub
+		return "Practice your backhand volley";
+	}
+	
+}

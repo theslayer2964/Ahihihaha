@@ -1,0 +1,14 @@
+package iuh.fit.web.jdbc;
+
+import javax.sql.DataSource;
+
+public class StudentDbUtil {
+	private DataSource dataSource;
+
+	public StudentDbUtil(DataSource dataSource) {
+		super();
+		this.dataSource = dataSource;
+	}
+	
+	
+}
